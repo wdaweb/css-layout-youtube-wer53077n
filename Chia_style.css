@@ -1,0 +1,356 @@
+body {
+	width: 90%;
+	height: 100%;
+	font-family: '微軟正黑體';
+}
+
+#top {
+	width: 100%;
+	height: 60px;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+/* --------(Top左) Youtube LOGO處 --------- */
+#topLeft {
+	width: 13%;
+	height: 100%;
+	float: left;
+	left: 1.3%;
+	/* background: #ff0; */
+	position: relative;
+}
+
+.three {
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+	background: #fff;
+	position: absolute;
+	top: 15%;
+	left: 0%;
+}
+.three:hover {
+	background: #f0f0f0;
+	cursor: pointer;
+}
+.three > i {
+	font-size: 1.3rem;
+	transform: translate(75%, 55%);
+	color: #7a7a7a;
+}
+
+.logo img {
+	width: 55%;
+	position: absolute;
+	top: 29%;
+	left: 30%;
+	cursor: pointer;
+}
+/* --------(Top中間) 搜尋處 --------- */
+#topCenter {
+	width: 45%;
+	height: 100%;
+	/* background: #aaa; */
+	float: left;
+	margin-left: 13%;
+	position: relative;
+}
+.search {
+	width: 80%;
+	height: 70%;
+	background: #fff;
+	border: 1px solid #c5c5c5;
+	border-radius: 100px;
+	position: absolute;
+	top: 15%;
+	left: 5%;
+}
+.search::before {
+	content: '';
+	width: 12%;
+	height: 100%;
+	background: #eeeeee;
+	border: 1px solid #c5c5c5;
+	border-radius: 0 30px 30px 0;
+	position: absolute;
+	left: 88%;
+	top: -2%;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+.search::after {
+	content: '搜尋';
+	position: absolute;
+	top: 23%;
+	left: 3%;
+	color: #aaa;
+}
+.search > i {
+	color: #7a7a7a;
+	position: absolute;
+	top: 23%;
+	right: 4.5%;
+	cursor: pointer;
+}
+
+.mic {
+	width: 45px;
+	height: 45px;
+	background: #f0f0f0;
+	border-radius: 100%;
+	position: absolute;
+	top: 15%;
+	right: 5%;
+}
+.mic:hover {
+	background: #dfdfdf;
+	cursor: pointer;
+}
+
+.mic > i {
+	font-size: 1.5rem;
+	position: absolute;
+	top: 25%;
+	left: 30%;
+}
+
+/* --------(Top右邊) 麥克風+大頭照 --------- */
+#topRight {
+	width: 13%;
+	height: 100%;
+	float: right;
+	margin-right: 1.5%;
+	/* background: rgb(163, 191, 163); */
+	position: relative;
+}
+.video {
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+	background: #fff;
+	position: absolute;
+	top: 13%;
+	left: 10%;
+}
+.video:hover {
+	background: #f0f0f0;
+	cursor: pointer;
+}
+.video > i {
+	font-size: 1.3rem;
+	position: absolute;
+	top: 26%;
+	left: 25%;
+}
+.bell {
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+	background: #fff;
+	position: absolute;
+	top: 13%;
+	left: 40%;
+}
+.bell:hover {
+	background: #f0f0f0;
+	cursor: pointer;
+}
+.bell > i {
+	font-size: 1.5rem;
+	position: absolute;
+	top: 23%;
+	left: 26%;
+}
+
+.face {
+	width: 45px;
+	height: 45px;
+	border-radius: 100%;
+	/* background: #a03232; */
+	position: absolute;
+	top: 13%;
+	left: 70%;
+	cursor: pointer;
+}
+
+/* ---------------------- 左側區列表 ------------------------ */
+#left {
+	width: 15%;
+	height: 100%;
+	float: left;
+	margin-top: 3.5%;
+	overflow: auto;
+	position: fixed;
+	background: #fff;
+}
+
+#menu {
+	width: 85%;
+	/* height: 100%; */
+	margin-left: 3%;
+	margin-top: 10px;
+	font-size: 15px;
+	/* background: #f00; */
+}
+
+/* ul > li 縮排 */
+#menu ul.no-indent {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#menu li {
+	display: block;
+	line-height: 3;
+	text-indent: 0.5rem;
+}
+i {
+	font-size: 1.3rem;
+}
+.no-indent a {
+	width: 100%;
+	height: 100%;
+	display: block;
+	text-decoration: none;
+	color: #000;
+}
+
+.no-indent a:hover {
+	width: 100%;
+	height: 100%;
+	background: #f0f0f0;
+	border-radius: 10px;
+}
+.img {
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	text-align: center;
+	background: #7a7a7a;
+	transform: translate(20%, 25%);
+}
+
+/* --------------------- 右側區 --------------------- */
+#right {
+	width: 85%;
+	float: right;
+}
+/*----- 全部、新聞、讓你耳目一新的影片 -----*/
+#bar {
+	width: 100%;
+	height: 9%;
+	position: fixed;
+	float: left;
+	top: 6%;
+	background: #ffffff;
+	z-index: 1;
+}
+.barMenu {
+	list-style: none;
+	margin: 5;
+	padding: 1;
+	background: #fff;
+	overflow: hidden;
+}
+
+.barMenu li {
+	float: left;
+	text-align: center;
+	font-size: 15px;
+}
+
+.barMenu li a {
+	background: #f0f0f0;
+	margin: 6px;
+	padding: 10px;
+	display: block;
+	text-decoration: none;
+	border-radius: 10px;
+	color: #000;
+	height: 13px;
+	line-height: 13px;
+	transition: 0.36s;
+}
+.barMenu li a:hover {
+	background: #dfdfdf;
+}
+
+.barMenu .one {
+	color: #fff;
+	background: #000;
+}
+
+#contents {
+	width: 108%;
+	height: 1200px;
+	float: left;
+	/* padding: 80px; */
+	/* background: linear-gradient(60deg, #fff, #333); */
+	transform: translate(0%, 8%);
+}
+
+/* ------------------------影片區---------------------- */
+
+.row1 {
+	width: 100%;
+	/* height: 250px; */
+	float: left;
+	display: block;
+	position: relative;
+}
+
+.col1 li {
+	width: 19%;
+	padding: 5px;
+	display: block;
+	float: left;
+	/* background: rgb(199, 199, 160); */
+}
+
+/* YOUTUBER小圖 */
+.small {
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	transform: translateY(10%);
+}
+/* 封面圖片 */
+.cover {
+	width: 100%;
+	border-radius: 10px;
+}
+.info {
+	float: right;
+	width: 88%;
+	height: 50%;
+	/* background: #ffd; */
+	transform: translate(3%, -10%);
+}
+
+/* 影片標題 */
+.title {
+	font-size: 0.8rem;
+	color: #000;
+	line-height: 15px;
+}
+p {
+	font-size: 0.7rem;
+	color: #757575;
+	line-height: 5px;
+}
+
+.cover:hover {
+	cursor: pointer;
+}
+.title:hover {
+	cursor: pointer;
+}
+
+.info p:hover {
+	cursor: pointer;
+}
